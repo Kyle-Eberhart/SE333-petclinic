@@ -1,4 +1,4 @@
-# SE333 Final Project
+# Kyle Eberhart -- SE333 Final Project
 
 ## AI-Assisted Test Generation Agent for Spring Petclinic
 
