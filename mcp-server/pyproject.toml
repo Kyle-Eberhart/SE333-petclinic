@@ -1,0 +1,10 @@
+[project]
+name = "se333-mcp-server"
+version = "0.1.0"
+description = "MCP coverage tools for SE333 project"
+requires-python = ">=3.10"
+
+dependencies = [
+    "fastmcp",
+    "httpx"
+]
