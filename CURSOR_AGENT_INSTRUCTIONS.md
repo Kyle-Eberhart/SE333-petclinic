@@ -7,7 +7,6 @@ Focus only on these classes:
 - Owner
 - Pet
 - Visit
-- ClinicServiceImpl
 - OwnerController
 
 Tasks:

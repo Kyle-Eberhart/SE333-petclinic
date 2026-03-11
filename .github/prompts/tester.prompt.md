@@ -11,11 +11,10 @@ Your goal is to increase unit test coverage for the Spring Petclinic project.
 Constraints:
 - Only generate tests for these classes:
 
-org.springframework.samples.petclinic.model.Owner
-org.springframework.samples.petclinic.model.Pet
-org.springframework.samples.petclinic.model.Visit
-org.springframework.samples.petclinic.service.ClinicServiceImpl
-org.springframework.samples.petclinic.controller.OwnerController
+org.springframework.samples.petclinic.owner.Owner
+org.springframework.samples.petclinic.owner.Pet
+org.springframework.samples.petclinic.owner.Visit
+org.springframework.samples.petclinic.owner.OwnerController
 
 Rules:
 - Do NOT test the entire repository.

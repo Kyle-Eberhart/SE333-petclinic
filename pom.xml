@@ -266,7 +266,11 @@
             <goals>
               <goal>report</goal>
             </goals>
-            <phase>prepare-package</phase>
+            <phase>test</phase>
+            <configuration>
+              <outputDirectory>${project.reporting.outputDirectory}/jacoco</outputDirectory>
+              <formats>HTML,XML</formats>
+            </configuration>
           </execution>
         </executions>
       </plugin>
