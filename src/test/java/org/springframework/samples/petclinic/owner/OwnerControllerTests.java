@@ -172,6 +172,19 @@ class OwnerControllerTests {
 	}
 
 	@Test
+	void processFindFormWithoutLastNameUsesBroadSearchAndReturnsList() throws Exception {
+		Owner o1 = new Owner();
+		o1.setId(1);
+		Owner o2 = new Owner();
+		o2.setId(2);
+		Page<Owner> page = new PageImpl<>(java.util.List.of(o1, o2),
+				org.springframework.data.domain.PageRequest.of(0, 5), 2);
+		given(owners.findByLastNameStartingWith(eq(""), any(Pageable.class))).willReturn(page);
+
+		mockMvc.perform(get("/owners")).andExpect(status().isOk()).andExpect(view().name("owners/ownersList"));
+	}
+
+	@Test
 	void processUpdateOwnerFormWithValidationErrorsReturnsForm() throws Exception {
 		Owner owner = new Owner();
 		owner.setId(1);
